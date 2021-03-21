@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blagram</title>
+    <title>Techpitgram</title>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-
   </head>
 
   <body>
-  
-    <%= render 'partial/navbar' %>
+    <%# ========== ここから編集する ========== %>
+    <div id="wrapper">
+       <%= render 'partial/navbar' if current_user %>
 
-    <%= yield %>
+       <% if flash[:notice] %>
+         <div class="alert alert-info"><%= flash[:notice] %></div>
+       <% end %>
+       <% if flash[:alert] %>
+         <div class="alert alert-danger"><%= flash[:alert] %></div>
+       <% end %>
+       <%= yield %>
+
+       <%# ========== partial/footerを追加する ========== %>
+       <%= render 'partial/footer' %>
+
+    </div>
+    <%# ========== ここまで編集する ========== %>
+
   </body>
 </html>
-
