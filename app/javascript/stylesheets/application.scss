@@ -2,7 +2,11 @@
 
 @import "layouts/navbar";
 
-/* ===ここから追加する=== */
 @import "common";
+
 @import "users/devise";
-/* ===ここまで追加する=== */
+
+@import "users/show";
+// users/show.scssファイルのコードを読み込めるようになる。
+@import "users/edit";
+// users/edit.scssファイルのコードを読み込めるようになる。

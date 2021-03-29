@@ -1,0 +1,10 @@
+<%= form_with model: @post do |f| %>
+<%# form_withはRails5.1から提供されているHTMLフォーム生成メソッド %>
+  <%= f.label :caption %>
+  <%= f.text_field :caption %>
+  <%= f.fields_for :photos do |i| %>
+  <%# fiels_forを使うことで、子モデル（今回でいうとPhotoモデル）に変更を加えることができる。 %>
+    <%= i.file_field :image %>
+  <% end %>
+  <%= f.submit "投稿", class: "btn btn-primary" %>
+<% end %>
