@@ -23,6 +23,14 @@ class PostsController < ApplicationController
     end
   end
 
+  def index
+    @posts = Post.limit(10).includes(:photos, :user).order('created_at DESC')
+    # limitメソッドは取り出すレコード数の上限を指定する。今回は、10個までの投稿を表示する。
+    # orderはデータベースから取り出すレコードを特定の順序で並べたい場合に使用する。
+    # order('created_at DESC')とすることで、created_atの降順、つまり投稿された最新の日時順に並び替える。
+    # includesメソッドを使うと、関連するテーブルをまとめて取得できる。テーブル取得のN+1問題を解決できる。
+  end
+
   private
   # privateではレシーバを指定できない。通常はレシーバにメソッドを合わせて使用するができない。つまり外部から呼び出せない。
     def post_params
