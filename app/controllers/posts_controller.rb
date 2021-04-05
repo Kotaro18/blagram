@@ -30,6 +30,11 @@ class PostsController < ApplicationController
     # order('created_at DESC')とすることで、created_atの降順、つまり投稿された最新の日時順に並び替える。
     # includesメソッドを使うと、関連するテーブルをまとめて取得できる。テーブル取得のN+1問題を解決できる。
   end
+  
+  def show
+    @post = Post.find_by(id: params[:id])
+    # id及びid以外の条件が分かっている場合、その条件に該当する最初のデータを取得できる
+  end
 
   private
   # privateではレシーバを指定できない。通常はレシーバにメソッドを合わせて使用するができない。つまり外部から呼び出せない。
