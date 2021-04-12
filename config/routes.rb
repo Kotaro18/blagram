@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   get '/users/:id', to: 'users#show', as: 'user'
 
-  resources :posts, only: %i(new create index show) do
+  resources :posts, only: %i(new create index show destroy) do
     # indexを追加するだけで、一覧ページへのルートが作成される。
     resources :photos, only: %i(create)
   end

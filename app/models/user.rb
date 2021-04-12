@@ -3,6 +3,8 @@ class User < ApplicationRecord
   # has_manyは他のモデルとの間に「1対多」のつながりを示す。
   # dependent: :destroyをつけることで、ユーザーが削除されると紐づく投稿も削除される。
 
+  has_many :likes
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,

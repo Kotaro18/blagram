@@ -4,6 +4,8 @@ class PostsController < ApplicationController
   # 今回は、postsコントローラーのnewアクションやcreateアクションを実行する前にauthenticate_user!を読み込む。
   # これで、サインインしていない状態でnewアクションやcreateアクションを実行しようとすると、サインインページにリダイレクトできる。
 
+  before_action :set_post, only: %i(show destroy)
+
   def new
     @post = Post.new
     # newはインスタンスを作成するメソッド。引数がなければ空のインスタンスが作成される。
@@ -32,8 +34,15 @@ class PostsController < ApplicationController
   end
   
   def show
-    @post = Post.find_by(id: params[:id])
-    # id及びid以外の条件が分かっている場合、その条件に該当する最初のデータを取得できる
+  end
+
+  def destroy
+    if @post.user == current_user
+      flash[:notice] = "投稿が削除されました" if @post.destroy
+    else
+      flash[:alert] = "投稿の削除に失敗しました"
+    end
+    redirect_to root_path
   end
 
   private
@@ -43,5 +52,10 @@ class PostsController < ApplicationController
       # requireメソッド：受け取る値のキーを設定する。
       # permitメソッド：変更を加えられるキーを指定する。今回はcaptionとimage。
       # mergeメソッド：2つのハッシュを統合する。今回は誰が投稿したか情報が必要なため、user_idを統合する。
+    end
+    
+    def set_post
+      @post = Post.find_by(id: params[:id])
+    # id及びid以外の条件が分かっている場合、その条件に該当する最初のデータを取得できる
     end
 end
