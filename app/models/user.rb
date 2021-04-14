@@ -4,6 +4,7 @@ class User < ApplicationRecord
   # dependent: :destroyをつけることで、ユーザーが削除されると紐づく投稿も削除される。
 
   has_many :likes
+  has_many :comments
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
