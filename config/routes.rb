@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     resources :photos, only: %i(create)
 
     resources :likes, only: %i(create destroy)
+    resources :comments, only: %i(create destroy)
   end
   # photosをネスト(入れ子)にすることで、postsと親子関係を紐づけられる。
 end
