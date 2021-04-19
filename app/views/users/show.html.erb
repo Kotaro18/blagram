@@ -5,15 +5,12 @@
     </div>
     <div class="col-md-8">
       <div class="row">
-        <h1><%= @user.name %></h1>
+        <h1><%= @user.username %></h1>
 
-        <%# ===この行を追加する=== %>
         <% if @user == current_user %>
         <%# 現在サインインしているユーザーが@userと一致したら、真を返す。 %>
           <%= link_to "プロフィールを編集", edit_user_registration_path, class: "btn btn-outline-dark edit-profile-btn" %>
           <button type="button" class="setting" data-toggle="modal" data-target="#exampleModal"></button>
-
-        <%# ===この行を追加する=== %>
         <% end %>
 
 
@@ -36,7 +33,7 @@
       </div>
       <div class="row">
         <p>
-          <%= @user.email %>
+          <%= @user.name %>
         </p>
       </div>
     </div>
