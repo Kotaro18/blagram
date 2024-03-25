@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-25T04:16:18.830Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="XBF4GXW9UYW7asRG0iRB" version="24.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-25T04:18:46.894Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="LF01E9vM01VBqQ2Rm471" version="24.0.7" type="github">
   <diagram name="ページ1" id="Oi9slwg6Us3ZP47cyHEc">
-    <mxGraphModel dx="1323" dy="1946" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2150" dy="1946" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -51,6 +51,12 @@
         </mxCell>
         <mxCell id="jqQTEuOriUqX5UfLK2Gr-29" value="ログ管理&lt;div&gt;CloudWatch&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="296.5" y="-36" width="125" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jqQTEuOriUqX5UfLK2Gr-30" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#8C4FFF;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cloudfront;" vertex="1" parent="1">
+          <mxGeometry y="40" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="jqQTEuOriUqX5UfLK2Gr-31" value="ヘルプページ / 画像等の配信&lt;div&gt;CloudFront&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-46" y="123" width="170" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
