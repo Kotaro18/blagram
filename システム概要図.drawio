@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-25T04:46:50.902Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="BoRYPYST833d65E2ji4Z" version="24.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-25T04:47:20.462Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="1X72Zwvik5HBCthA_d86" version="24.0.7" type="github">
   <diagram name="ページ1" id="Oi9slwg6Us3ZP47cyHEc">
     <mxGraphModel dx="2304" dy="1835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -112,6 +112,14 @@
         <mxCell id="jqQTEuOriUqX5UfLK2Gr-58" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];gradientDirection=north;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#1E262E;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.general;" vertex="1" parent="1">
           <mxGeometry x="-440" y="720" width="78" height="78" as="geometry" />
         </mxCell>
+        <mxCell id="jqQTEuOriUqX5UfLK2Gr-81" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jqQTEuOriUqX5UfLK2Gr-59" target="jqQTEuOriUqX5UfLK2Gr-64">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-401" y="440" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-401" y="439" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="jqQTEuOriUqX5UfLK2Gr-59" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.client;" vertex="1" parent="1">
           <mxGeometry x="-440" y="520" width="78" height="76" as="geometry" />
         </mxCell>
@@ -127,7 +135,7 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-401" y="447" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="-401" y="440" />
+              <mxPoint x="-401" y="420" />
             </Array>
           </mxGeometry>
         </mxCell>
