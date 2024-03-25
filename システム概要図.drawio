@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-25T04:45:24.900Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="9xo6vSzRV-PNbEzD7gSB" version="24.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-25T04:46:12.456Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="ptKSiT1Ab5UBMRfNFz30" version="24.0.7" type="github">
   <diagram name="ページ1" id="Oi9slwg6Us3ZP47cyHEc">
     <mxGraphModel dx="2304" dy="1835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -54,6 +54,9 @@
         </mxCell>
         <mxCell id="jqQTEuOriUqX5UfLK2Gr-29" value="ログ管理&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;div&gt;CloudWatch&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;Simple Storage Service (S3)&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="296.5" y="-76" width="303.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jqQTEuOriUqX5UfLK2Gr-77" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jqQTEuOriUqX5UfLK2Gr-30" target="jqQTEuOriUqX5UfLK2Gr-49">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="jqQTEuOriUqX5UfLK2Gr-30" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#8C4FFF;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cloudfront;" vertex="1" parent="1">
           <mxGeometry x="-119" width="78" height="78" as="geometry" />
@@ -111,6 +114,14 @@
         </mxCell>
         <mxCell id="jqQTEuOriUqX5UfLK2Gr-59" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.client;" vertex="1" parent="1">
           <mxGeometry x="-440" y="520" width="78" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="jqQTEuOriUqX5UfLK2Gr-76" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="jqQTEuOriUqX5UfLK2Gr-60" target="jqQTEuOriUqX5UfLK2Gr-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-401" y="190.99999999999977" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-401" y="39" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="jqQTEuOriUqX5UfLK2Gr-60" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.mobile_client;" vertex="1" parent="1">
           <mxGeometry x="-421.5" y="280" width="41" height="78" as="geometry" />
